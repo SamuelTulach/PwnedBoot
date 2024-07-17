@@ -13,7 +13,7 @@ This is a proof-of-concept payload that can replace `mcupdate_<platform>.dll`, w
 5. Boot from the disk where that Windows install is located.
 6. Go to advanced boot options and select 'Disable Driver Signature Enforcement'.
 7. The example should be loaded.
-8. Follow the instructions to boot other OS install, DSE **does not** have to be disabled on this install.
+8. Follow the instructions to boot other OS install, DSE **does not** have to be disabled on the other install.
 
 ## How this works
 The Windows bootloader (`winload.efi`) does not check the code signature or integrity of the `mcupdate_<platform>.dll` file when starting the system if the 'Disable Driver Signature Enforcement' option is selected. The file is loaded very early in the boot stage, and its entry point is executed from within the bootloader before a call to `ExitBootServices()`, which means that you can just restore the context and return back to the firmware. The plot twist is that `mcupdate_<platform>.dll` it not inside a valid memory mapping in the firmware context, so this project just remaps itself over the bootloader.
