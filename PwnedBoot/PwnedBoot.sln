@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PwnedBoot", "PwnedBoot\PwnedBoot.vcxproj", "{0EED1C47-DCE3-4848-B723-17FACD122E9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EED1C47-DCE3-4848-B723-17FACD122E9D}.Release|x64.ActiveCfg = Release|x64
+		{0EED1C47-DCE3-4848-B723-17FACD122E9D}.Release|x64.Build.0 = Release|x64
+		{0EED1C47-DCE3-4848-B723-17FACD122E9D}.Release|x64.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17F65112-8DE8-4DFD-93FF-EEEDE5BA4914}
+	EndGlobalSection
+EndGlobal
